@@ -1,2 +1,3 @@
 FROM almalinux:8
-RUN yum -y install cmake
+RUN dnf -y groupinstall "Development Tools"
+RUN dnf -y install gcc cmake
